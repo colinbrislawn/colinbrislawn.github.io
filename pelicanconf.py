@@ -21,14 +21,18 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('Not on Facebook', 'https://www.facebook.com/pages/King-Colin-Brislawn/216922768365881'),
-    ('Works at PNNL', 'http://www.pnnl.gov/biology/staff/staff_info.asp?staff_num=8191'),
-    ('Made with Pelican', 'http://getpelican.com/'),
-    )
+	('Works at PNNL', 'http://www.pnnl.gov/biology/staff/staff_info.asp?staff_num=8191'),
+	('Alum of Lamendella Labs', 'http://jcsites.juniata.edu/faculty/lamendella/'),
+	('Alum of Juniata College', 'www.juniata.edu'),
+	)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+	('GitHub', 'https://github.com/colinbrislawn'),
+	('Google+', 'https://plus.google.com/+ColinBrislawn'),
+	('Linkedin', 'https://www.linkedin.com/pub/colin-brislawn/a3/233/7'),
+	('Not on Facebook', 'https://www.facebook.com/pages/King-Colin-Brislawn/216922768365881'),
+	)
 
 DEFAULT_PAGINATION = 5
 
