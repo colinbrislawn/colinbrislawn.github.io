@@ -15,6 +15,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+DISPLAY_ARCHIVES_ON_MENU = False
+
 # Blogroll
 LINKS = (
 	('Works at PNNL', 'http://www.pnnl.gov/biology/staff/staff_info.asp?staff_num=8191'),
