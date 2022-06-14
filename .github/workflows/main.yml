@@ -35,7 +35,7 @@ jobs:
       run: python3 -m pip install -r ./requirements.txt
 
     - name: Run Pelican
-      run: pelican --settings pelican/publishconf.py --fatal warnings
+      run: pelican --settings publishconf.py --fatal warnings
       env:
         PYTHONPATH: pelican/
 

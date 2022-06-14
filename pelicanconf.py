@@ -33,10 +33,8 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 5
 
-STATIC_PATHS = ['images', 'pages', 'extra/CNAME']
+STATIC_PATHS = ['images', 'pages'] #, 'extra/CNAME']
 
-# THEME = '../pelican-themes/simple-bootstrap'
-# THEME = '../CamerataMusica/pelican-bootstrap3' # works, lol
 THEME = 'theme'
 
 # Uncomment following line if you want document-relative URLs when developing
