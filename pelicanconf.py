@@ -16,13 +16,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 DISPLAY_ARCHIVES_ON_MENU = False
-
-# Blogroll
-LINKS = (
-	('Works at PNNL', 'http://www.pnnl.gov/biology/staff/staff_info.asp?staff_num=8191'),
-	('Alum of Lamendella Labs', 'http://jcsites.juniata.edu/faculty/lamendella/'),
-	('Alum of Juniata College', 'www.juniata.edu'),
-	)
+DISPLAY_TAGS_ON_SIDEBAR = False # for now, as I have no tags
 
 # Social widget
 SOCIAL = (
@@ -33,11 +27,35 @@ SOCIAL = (
 	# ('Not on Facebook', 'https://www.facebook.com/pages/King-Colin-Brislawn/216922768365881'),
 	)
 
+# Blogroll
+LINKS = (
+	('Former Staff Scientist at PNNL', 'https://biology.pnnl.gov/people/colin-brislawn'),
+	('PI: Dr. Regina Lamendella', 'https://en.wikipedia.org/wiki/Regina_Lamendella'),
+	('PI: Janet Jansson', 'https://www.pnnl.gov/people/janet-jansson'),
+	('PI: Hans Bernstein', 'https://twitter.com/microbe_angler?lang=en'),
+	('Former Director of Computational Informatics at CSI', 'https://csidx.com'),
+	)
+
 DEFAULT_PAGINATION = 5
 
 STATIC_PATHS = ['images', 'pages'] #, 'extra/CNAME']
 
-THEME = 'theme'
+THEME = 'theme' # local copy of pelican-bootstrap3
+# THEME = '../pelican-themes/built-texts' # pretty good!
+
+# THEME = '../pelican-themes/html5-dopetrope' # Needs edits to footer, body images
+# THEME = '../pelican-themes/brutalist' # very clean, missing lots
+# THEME = '../pelican-themes/Flex' # very clean, responsive, needs edits to sidebar and menu
+# THEME = '../pelican-themes/gum' # very clean, almost ready to go
+# THEME = '../pelican-themes/MinimalXY' # very clean, commercial, everything is pages
+# THEME = '../pelican-themes/nest' # great image header, missing menu, needs work
+# THEME = '../pelican-themes/resume' # needs configuration, single page
+
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+# Settings for html5-dopetrope
+MAIL = "cbrisl@gmail.com"
+LINKEDIN_USER  = "007233a3"
+# ABOUT_TEXT = "Testing where this goes"
