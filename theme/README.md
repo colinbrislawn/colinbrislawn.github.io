@@ -1,9 +1,9 @@
 # pelican-bootstrap3
 
+Sources: [original upstream repo](https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3), this version copied from [Camerata Musica repo](https://github.com/colinbrislawn/CamerataMusica/tree/master/pelican-bootstrap3)
+
 This is a Bootstrap 3 theme for Pelican. It's fully responsive. Bootstrap 3 has seen an official, final release now, so
 I don't expect any breaking changes anymore. I will try to keep it up-to-date.
-
-Sources: [original upstream repo](https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3), copied from [Camerata Musica repo](https://github.com/colinbrislawn/CamerataMusica/tree/master/pelican-bootstrap3)
 
 ## CONTRIBUTING
 
@@ -26,18 +26,18 @@ Point the `THEME` variable in your `pelicanconf.py` to `/path/to/pelican-bootstr
 This theme honors the following standard Pelican settings:
 
 * Putting feeds in the `<head>` section:
-	* `FEED_ALL_ATOM`
-	* `FEED_ALL_RSS`
+  * `FEED_ALL_ATOM`
+  * `FEED_ALL_RSS`
 * Template settings:
-	* `DISPLAY_PAGES_ON_MENU`
-	* `DISPLAY_CATEGORIES_ON_MENU`
-	* `MENUITEMS`
-	* `LINKS` (Blogroll will be put in the sidebar instead of the head)
+  * `DISPLAY_PAGES_ON_MENU`
+  * `DISPLAY_CATEGORIES_ON_MENU`
+  * `MENUITEMS`
+  * `LINKS` (Blogroll will be put in the sidebar instead of the head)
 * Analytics & Comments
-	* `GOOGLE_ANALYTICS` (classic tracking code)
-	* `GOOGLE_ANALYTICS_UNIVERSAL` and `GOOGLE_ANALYTICS_UNIVERSAL_PROPERTY` (Universal tracking code)
-	* `DISQUS_SITENAME`
-	* `PIWIK_URL`, `PIWIK_SSL_URL` and `PIWIK_SITE_ID`
+  * `GOOGLE_ANALYTICS` (classic tracking code)
+  * `GOOGLE_ANALYTICS_UNIVERSAL` and `GOOGLE_ANALYTICS_UNIVERSAL_PROPERTY` (Universal tracking code)
+  * `DISQUS_SITENAME`
+  * `PIWIK_URL`, `PIWIK_SSL_URL` and `PIWIK_SITE_ID`
 
 It uses the `tag_cloud` variable for displaying tags in the sidebar. You can control the amount of tags shown with: `TAG_CLOUD_MAX_ITEMS`
 
@@ -55,13 +55,13 @@ Set `SHOW_ARTICLE_AUTHOR` to True to show the author of the article at the top o
 
 If you want to add custom css to the theme, without having to clone and maintain your own version of the theme, you can use the `CUSTOM_CSS` variable. The value is the location where you tell Pelican to put the file (see below):
 
-```
+```Python
 CUSTOM_CSS = 'static/custom.css'
 ```
 
 To tell Pelican to copy the relevant file to the desired destination, add the path to `STATIC_PATHS` and the destination to `EXTRA_PATH_METADATA`, like so:
 
-```
+```Python
 # Tell Pelican to add 'extra/custom.css' to the output dir
 STATIC_PATHS = ['images', 'extra/custom.css']
 
@@ -75,27 +75,27 @@ EXTRA_PATH_METADATA = {
 
 You can choose the syntax highlighting style by using the `PYGMENTS_STYLE` variable to specify one of the built-in Pygments styles. By default the `native` style is used. The following styles are avaiable:
 
-- autumn
-- borland
-- bw
-- colorful
-- default
-- emacs
-- friendly
-- fruity
-- manni
-- monokai
-- murphy
-- native
-- pastie
-- perldoc
-- solarizeddark
-- solarizedlight
-- tango
-- trac
-- vim
-- vs
-- zenburn
+* autumn
+* borland
+* bw
+* colorful
+* default
+* emacs
+* friendly
+* fruity
+* manni
+* monokai
+* murphy
+* native
+* pastie
+* perldoc
+* solarizeddark
+* solarizedlight
+* tango
+* trac
+* vim
+* vs
+* zenburn
 
 For a demo of the different Pygment styles, have a look [here](http://pygments.org/demo/218030/)
 
@@ -166,18 +166,19 @@ A banner image can be added to the theme, displayed with the SITENAME and an opt
 The following things can be displayed on the sidebar:
 
 * **Social links** can be provided through the `SOCIAL` variable. If it's empty, the section will not be shown
-	* In your `pelicanconf.py` provide your social links like this:
+  * In your `pelicanconf.py` provide your social links like this:
 
-```
+```Python
 SOCIAL = (('twitter', 'http://twitter.com/DaanDebie'),
           ('linkedin', 'http://www.linkedin.com/in/danieldebie'),
           ('github', 'http://github.com/DandyDev'),)
 ```
+
 * **Tags** will be shown if `DISPLAY_TAGS_ON_SIDEBAR` is set to _True_. Normally, tags are shown as a list.
-	* Set `DISPLAY_TAGS_INLINE` to _True_, to display the tags inline (ie. as tagcloud)
+  * Set `DISPLAY_TAGS_INLINE` to _True_, to display the tags inline (ie. as tagcloud)
 * **Categories** will be shown if `DISPLAY_CATEGORIES_ON_SIDEBAR` is set to _True_
 * **Recent Posts** will be shown if `DISPLAY_RECENT_POSTS_ON_SIDEBAR` is set to _True_
-	* Use `RECENT_POST_COUNT` to control the amount of recent posts. Defaults to **5**
+  * Use `RECENT_POST_COUNT` to control the amount of recent posts. Defaults to **5**
 
 To remove the sidebar entirely, set `HIDE_SIDEBAR` to _True_.
 
@@ -198,11 +199,11 @@ You can optionally declare a [Creative Commons license](http://creativecommons.o
 
 * To choose the license by name, set `CC_LICENSE` to the common abbreviated name of the license: `"CC-BY"` (require attribution), `"CC-BY-SA"` (require ShareAlike), `"CC-BY-ND"` (NoDerivatives) , `"CC-BY-NC"` (require attribution, no commercial reuse), `"CC-BY-NC-SA"` (require ShareAlike, no commercial reuse), or `"CC-BY-NC-ND"` (NoDerivatives, no commercial reuse).
 * Alternatively, choose the licence by features:
-    * `CC_LICENSE_DERIVATIVES` - `"yes"` if permitted, `"no"` if not permitted, and `"ShareAlike"` if derivatives must be shared under the same terms.
-    * `CC_LICENSE_COMMERCIAL` - `"yes"` if commercial reuse is permitted, and `"no"` otherwise.
+  * `CC_LICENSE_DERIVATIVES` - `"yes"` if permitted, `"no"` if not permitted, and `"ShareAlike"` if derivatives must be shared under the same terms.
+  * `CC_LICENSE_COMMERCIAL` - `"yes"` if commercial reuse is permitted, and `"no"` otherwise.
 * Optionally, you can include attribution markup in the license mark by setting `CC_ATTR_MARKUP` to _True_.
 
-The license choice mirrors the [Creative Commons License Chooser](http://creativecommons.org/choose/). Source for the macro that renders the mark is at http://github.com/hlapp/cc-tools.
+The license choice mirrors the [Creative Commons License Chooser](http://creativecommons.org/choose/). Source for the macro that renders the mark is at [http://github.com/hlapp/cc-tools](http://github.com/hlapp/cc-tools).
 
 ### GitHub
 
@@ -229,7 +230,7 @@ The same image options for Open Graph (see above) can be used for setting images
 
 The theme can show your twitter timeline in the sidebar. To enable, provide a `TWITTER_USERNAME` and a `TWITTER_WIDGET_ID`.
 
-To get a `TWITTER_WIDGET_ID`, go to: https://twitter.com/settings/widgets and select `Create new`. You'll find the TWITTER_WIDGET_ID under the html or in the site url:
+To get a `TWITTER_WIDGET_ID`, go to: [Twitter > Settings > Widgets](https://twitter.com/settings/widgets) and select `Create new`. You'll find the TWITTER_WIDGET_ID under the html or in the site url:
 
 `https://twitter.com/settings/widgets/TWITTER_WIDGET_ID/edit`
 
@@ -244,14 +245,14 @@ You can enable sharing buttons through [AddThis](http://www.addthis.com/) by set
 
 As an alternative, you may use [Shariff](https://github.com/heiseonline/shariff) by setting `SHARIFF = True`. This will display the privacy enabled social media buttons developed by [heiseonline](https://github.com/heiseonline).
 
-  * By default, `data-url` is set to the URL of the current article.
-  * To customize the social media buttons, set
-    * `SHARIFF_BACKEND_URL` (see [Shariff Backends](https://github.com/heiseonline/shariff#backends))
-    * `SHARIFF_LANG` (`de` (default), `en` or `fr`)
-    * `SHARIFF_ORIENTATION` (`horizontal` (defualt) or `vertical`)
-    * `SHARIFF_SERVICES` (default: `[&quot;facebook&quot;,&quot;googleplus&quot;]`)
-    * `SHARIFF_THEME` (`standard` or `gray`)
-    * `SHARIFF_TWITTER_VIA` (`True`/`False`, uses `TWITTER_USERNAME`)
+* By default, `data-url` is set to the URL of the current article.
+* To customize the social media buttons, set
+  * `SHARIFF_BACKEND_URL` (see [Shariff Backends](https://github.com/heiseonline/shariff#backends))
+  * `SHARIFF_LANG` (`de` (default), `en` or `fr`)
+  * `SHARIFF_ORIENTATION` (`horizontal` (defualt) or `vertical`)
+  * `SHARIFF_SERVICES` (default: `[&quot;facebook&quot;,&quot;googleplus&quot;]`)
+  * `SHARIFF_THEME` (`standard` or `gray`)
+  * `SHARIFF_TWITTER_VIA` (`True`/`False`, uses `TWITTER_USERNAME`)
 
 For a detailed description of each setting, refer to [data attributes](https://github.com/heiseonline/shariff#options-data-attributes) description at the [Shariff README](https://github.com/heiseonline/shariff).
 
@@ -261,10 +262,10 @@ This theme has support for the
 [Tipue Search plugin](https://github.com/getpelican/pelican-plugins/tree/master/tipue_search).
 
 All you have to do, is:
-- enable the plugin, and the theme will add a search box on the right
-  side of the menu
-- Add `DIRECT_TEMPLATES = (('search',))` in your `pelicanconf.py`.
 
+* enable the plugin, and the theme will add a search box on the right
+  side of the menu
+* Add `DIRECT_TEMPLATES = (('search',))` in your `pelicanconf.py`.
 
 ### Footer
 
@@ -278,8 +279,6 @@ If you want more examples of what you could do with this theme, have a [look her
 
 ## Screenshot
 
-![](screenshot.png)
+![example](screenshot.png)
 
-![](screenshot-article.png)
-
-
+![example article](screenshot-article.png)
