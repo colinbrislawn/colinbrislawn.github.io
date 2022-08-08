@@ -23,8 +23,16 @@ SOCIAL = (
 	('GitHub', 'https://github.com/colinbrislawn'),
 	('Linkedin', 'https://www.linkedin.com/pub/colin-brislawn/a3/233/7'),
 	('Google Scholar', 'https://scholar.google.com/citations?user=fyhedCwAAAAJ&hl=en'),
-	('ORCID', 'https://orcid.org/0000-0002-9109-1950'),
-	# ('Not on Facebook', 'https://www.facebook.com/pages/King-Colin-Brislawn/216922768365881'),
+	('ORCID', 'https://orcid.org/0000-0002-9109-1950')
+	)
+
+# Blogroll
+LINKS = (
+	('Staff Scientist at PNNL', 'https://biology.pnnl.gov/people/colin-brislawn'),
+	('Director of Computational Informatics at CSI', 'https://csidx.com'),
+	('PI: Regina Lamendella', 'https://en.wikipedia.org/wiki/Regina_Lamendella'),
+	('PI: Janet Jansson', 'https://www.pnnl.gov/people/janet-jansson'),
+	('PI: Hans Bernstein', 'https://twitter.com/microbe_angler?lang=en'),
 	)
 
 # Blogroll
