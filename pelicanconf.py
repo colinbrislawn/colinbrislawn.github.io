@@ -21,7 +21,7 @@ DISPLAY_TAGS_ON_SIDEBAR = False # for now, as I have no tags
 # Social widget
 SOCIAL = (
 	('GitHub', 'https://github.com/colinbrislawn'),
-	('Linkedin', 'https://www.linkedin.com/pub/colin-brislawn/a3/233/7'),
+	('Linkedin', 'https://www.linkedin.com/in/colin-j-brislawn-007233a3/'),
 	('Google Scholar', 'https://scholar.google.com/citations?user=fyhedCwAAAAJ&hl=en'),
 	('ORCID', 'https://orcid.org/0000-0002-9109-1950')
 	)
