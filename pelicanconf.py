@@ -28,20 +28,11 @@ SOCIAL = (
 
 # Blogroll
 LINKS = (
-	('Staff Scientist at PNNL', 'https://biology.pnnl.gov/people/colin-brislawn'),
+	('Staff Scientist at PNNL', 'https://www.emsl.pnnl.gov/person/colin-brislawn/52280'),
 	('Director of Computational Informatics at CSI', 'https://csidx.com'),
 	('PI: Regina Lamendella', 'https://en.wikipedia.org/wiki/Regina_Lamendella'),
 	('PI: Janet Jansson', 'https://www.pnnl.gov/people/janet-jansson'),
 	('PI: Hans Bernstein', 'https://twitter.com/microbe_angler?lang=en'),
-	)
-
-# Blogroll
-LINKS = (
-	('Staff Scientist at PNNL', 'https://biology.pnnl.gov/people/colin-brislawn'),
-	('PI: Regina Lamendella', 'https://en.wikipedia.org/wiki/Regina_Lamendella'),
-	('PI: Janet Jansson', 'https://www.pnnl.gov/people/janet-jansson'),
-	('PI: Hans Bernstein', 'https://twitter.com/microbe_angler?lang=en'),
-	('Director of Computational Informatics at CSI', 'https://csidx.com'),
 	)
 
 DEFAULT_PAGINATION = 5

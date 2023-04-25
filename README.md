@@ -6,9 +6,9 @@ A small website made by Colin Brislawn
 
 ```bash
 # Install if needed
-# mamba create -n pelican472 pelican=4.7.2 markdown=3.3.7
+# mamba create -n pelican pelican=4.8.0 markdown=3.4.3
 
-mamba activate pelican472
+mamba activate pelican
 pelican -r -l
 ```
 
