@@ -1,12 +1,13 @@
+from datetime import date
+
 AUTHOR = 'Colin Brislawn'
 SITENAME = 'Colin Brislawn'
 SITEURL = ''
 
 PATH = 'content'
-
 TIMEZONE = 'America/Los_Angeles'
-
 DEFAULT_LANG = 'en'
+DCOPY_DATE = date.today().year
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
