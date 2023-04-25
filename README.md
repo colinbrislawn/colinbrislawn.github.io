@@ -12,4 +12,4 @@ mamba activate pelican472
 pelican -r -l
 ```
 
-Go to [localhost:8000/](http://localhost:8000/)
+Go to [localhost:8000/](http://localhost:8000/). (Some script cdns only load on localhost and not by IP address)

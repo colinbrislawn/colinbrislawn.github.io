@@ -37,11 +37,11 @@ LINKS = (
 
 # Blogroll
 LINKS = (
-	('Former Staff Scientist at PNNL', 'https://biology.pnnl.gov/people/colin-brislawn'),
-	('PI: Dr. Regina Lamendella', 'https://en.wikipedia.org/wiki/Regina_Lamendella'),
+	('Staff Scientist at PNNL', 'https://biology.pnnl.gov/people/colin-brislawn'),
+	('PI: Regina Lamendella', 'https://en.wikipedia.org/wiki/Regina_Lamendella'),
 	('PI: Janet Jansson', 'https://www.pnnl.gov/people/janet-jansson'),
 	('PI: Hans Bernstein', 'https://twitter.com/microbe_angler?lang=en'),
-	('Former Director of Computational Informatics at CSI', 'https://csidx.com'),
+	('Director of Computational Informatics at CSI', 'https://csidx.com'),
 	)
 
 DEFAULT_PAGINATION = 5
